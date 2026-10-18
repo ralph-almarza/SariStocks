@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — SariStocks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="navbar" class="topbar"></header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Admin</h1>
+      <span class="sub">Users, store settings, and backup</span>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem">
+      <h2>User accounts <button class="btn small" id="new-user-btn" type="button" style="float: right">+ New user</button></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr><th>Name</th><th>Username</th><th>Role</th><th>Status</th><th>Created</th><th>Actions</th></tr>
+          </thead>
+          <tbody id="users-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <h2>Store settings</h2>
+        <form id="settings-form">
+          <div class="field">
+            <label for="sf-storename">Store name (printed on receipts)</label>
+            <input id="sf-storename" name="storeName" required>
+          </div>
+          <div class="field">
+            <label for="sf-header">Receipt header</label>
+            <input id="sf-header" name="receiptHeader">
+          </div>
+          <div class="field">
+            <label for="sf-footer">Receipt footer</label>
+            <input id="sf-footer" name="receiptFooter">
+          </div>
+          <div class="field">
+            <label for="sf-minstock">Default minimum stock for new products</label>
+            <input id="sf-minstock" name="defaultMinStock" type="number" min="0" step="1">
+          </div>
+          <div class="field check-row">
+            <label class="check-row">
+              <input type="checkbox" name="lowStockAlertsEnabled" id="sf-alerts">
+              Low-stock alerts enabled
+            </label>
+          </div>
+          <button class="btn" type="submit">Save settings</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Data backup</h2>
+        <p class="hint">
+          Downloads every collection (settings, users, categories, products, sales, alerts, stock movements)
+          as a single JSON file. Keep it safe — this is the store's full ledger.
+        </p>
+        <a class="btn" href="/api/backup" style="margin-top: 0.6rem">⬇ Download backup (JSON)</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- User create/edit modal -->
+  <div class="modal" id="modal-user">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="user-modal-title">New user</h2>
+        <button class="close-x" type="button" data-close="modal-user">✕</button>
+      </div>
+      <form id="user-form">
+        <div class="field">
+          <label for="uf-name">Full name</label>
+          <input id="uf-name" name="name" required>
+        </div>
+        <div class="field" id="uf-username-wrap">
+          <label for="uf-username">Username</label>
+          <input id="uf-username" name="username" autocapitalize="none" autocomplete="off">
+        </div>
+        <div class="field" id="uf-password-wrap">
+          <label for="uf-password">Password</label>
+          <input id="uf-password" name="password" type="password" autocomplete="new-password">
+        </div>
+        <div class="field">
+          <label for="uf-role">Role</label>
+          <select id="uf-role" name="role">
+            <option value="cashier">Cashier — POS only</option>
+            <option value="manager">Manager — inventory &amp; reports</option>
+            <option value="admin">Admin — everything</option>
+          </select>
+        </div>
+        <div class="field check-row" id="uf-active-wrap" style="display: none">
+          <label class="check-row"><input type="checkbox" name="active" id="uf-active"> Active (can log in)</label>
+        </div>
+        <div class="modal-actions">
+          <button class="btn secondary" type="button" data-close="modal-user">Cancel</button>
+          <button class="btn" type="submit">Save user</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

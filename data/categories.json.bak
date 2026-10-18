@@ -1,0 +1,34 @@
+[
+  {
+    "id": "c_bev",
+    "name": "Beverages"
+  },
+  {
+    "id": "c_snack",
+    "name": "Snacks"
+  },
+  {
+    "id": "c_noodles",
+    "name": "Noodles & Canned Goods"
+  },
+  {
+    "id": "c_cond",
+    "name": "Condiments"
+  },
+  {
+    "id": "c_house",
+    "name": "Household"
+  },
+  {
+    "id": "c_care",
+    "name": "Personal Care"
+  },
+  {
+    "id": "c_health",
+    "name": "Health & Medicine"
+  },
+  {
+    "id": "c_essentials",
+    "name": "Rice & Essentials"
+  }
+]

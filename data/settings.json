@@ -1,0 +1,7 @@
+{
+  "storeName": "Aling Nena's Sari-Sari Store",
+  "receiptHeader": "Salamat! Thank you for your purchase.",
+  "receiptFooter": "Please come again!",
+  "defaultMinStock": 5,
+  "lowStockAlertsEnabled": true
+}

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory — SariStocks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="navbar" class="topbar"></header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Inventory</h1>
+      <span class="sub">Products, stock, and QR labels</span>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem">
+      <div class="toolbar">
+        <input id="prod-search" placeholder="Search name or code…" style="min-width: 220px">
+        <select id="cat-filter"><option value="">All categories</option></select>
+        <select id="sort-select">
+          <option value="name">Sort by name</option>
+          <option value="code">by code</option>
+          <option value="price">by price</option>
+          <option value="stock">by stock</option>
+          <option value="updated">by last update</option>
+        </select>
+        <select id="dir-select">
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+        <label class="check-row"><input type="checkbox" id="low-only"> Low stock only</label>
+        <label class="check-row"><input type="checkbox" id="include-inactive"> Show archived</label>
+        <span class="spacer"></span>
+        <button class="btn secondary" id="print-labels-btn" type="button">Print labels</button>
+        <button class="btn" id="new-product-btn" type="button">+ New product</button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table" id="products-table">
+          <thead>
+            <tr>
+              <th></th><th>Name</th><th>Code</th><th>Category</th>
+              <th class="num">Price</th><th class="num">Stock</th><th class="num">Min</th>
+              <th>Status</th><th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="products-body"></tbody>
+        </table>
+      </div>
+      <p class="hint">Tick several products, then “Print labels” for a printable QR sheet. Low-stock rows are highlighted.</p>
+    </div>
+
+    <div class="card">
+      <h2>Categories</h2>
+      <form id="category-form" class="scan-row" style="max-width: 480px">
+        <input id="category-name" placeholder="New category name">
+        <button class="btn" type="submit">Add</button>
+      </form>
+      <div id="category-list" style="margin-top: 0.8rem"></div>
+    </div>
+  </main>
+
+  <!-- Product create/edit modal -->
+  <div class="modal" id="modal-product">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="product-modal-title">New product</h2>
+        <button class="close-x" type="button" data-close="modal-product">✕</button>
+      </div>
+      <form id="product-form">
+        <div class="field">
+          <label for="pf-name">Name</label>
+          <input id="pf-name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="pf-code">Code (barcode or house code — leave blank to auto-generate SS-xxxx)</label>
+          <input id="pf-code" name="code" autocapitalize="characters">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="pf-category">Category</label>
+            <select id="pf-category" name="categoryId"></select>
+          </div>
+          <div class="field">
+            <label for="pf-price">Price (₱)</label>
+            <input id="pf-price" name="price" type="number" min="0" step="0.01" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="pf-unit">Unit</label>
+            <input id="pf-unit" name="unit" value="pc">
+          </div>
+          <div class="field">
+            <label for="pf-minstock">Minimum stock (alert threshold)</label>
+            <input id="pf-minstock" name="minStock" type="number" min="0" step="1" value="5">
+          </div>
+        </div>
+        <div class="field" id="pf-stock-wrap">
+          <label for="pf-stock">Initial stock</label>
+          <input id="pf-stock" name="stock" type="number" min="0" step="1" value="0">
+        </div>
+        <div class="field check-row" id="pf-active-wrap" style="display: none">
+          <label class="check-row"><input type="checkbox" name="active" id="pf-active"> Active (sold at POS)</label>
+        </div>
+        <div class="modal-actions">
+          <button class="btn secondary" type="button" data-close="modal-product">Cancel</button>
+          <button class="btn" type="submit">Save product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Restock modal -->
+  <div class="modal" id="modal-restock">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Restock</h2>
+        <button class="close-x" type="button" data-close="modal-restock">✕</button>
+      </div>
+      <p id="rs-name" class="hint"></p>
+      <form id="restock-form">
+        <input type="hidden" name="id">
+        <div class="field">
+          <label for="rs-qty">Quantity received</label>
+          <input id="rs-qty" name="qty" type="number" min="1" step="1" required>
+        </div>
+        <div class="field">
+          <label for="rs-note">Note (optional)</label>
+          <input id="rs-note" name="note" placeholder="e.g. delivery from supplier">
+        </div>
+        <div class="modal-actions">
+          <button class="btn secondary" type="button" data-close="modal-restock">Cancel</button>
+          <button class="btn" type="submit">Add stock</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Stock adjust modal -->
+  <div class="modal" id="modal-adjust">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Stock adjustment</h2>
+        <button class="close-x" type="button" data-close="modal-adjust">✕</button>
+      </div>
+      <p id="ad-name" class="hint"></p>
+      <form id="adjust-form">
+        <input type="hidden" name="id">
+        <div class="field">
+          <label for="ad-delta">Change (e.g. -3 for shrinkage, 5 for a found box)</label>
+          <input id="ad-delta" name="delta" type="number" step="1" required>
+        </div>
+        <div class="field">
+          <label for="ad-note">Reason (optional)</label>
+          <input id="ad-note" name="note" placeholder="e.g. damaged items">
+        </div>
+        <div class="modal-actions">
+          <button class="btn secondary" type="button" data-close="modal-adjust">Cancel</button>
+          <button class="btn" type="submit">Apply adjustment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="print-area"></div>
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="js/inventory.js"></script>
+</body>
+</html>

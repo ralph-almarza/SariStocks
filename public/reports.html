@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports — SariStocks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="navbar" class="topbar"></header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Reports</h1>
+      <span class="sub">CSV export or print to PDF</span>
+    </div>
+
+    <div class="card no-print" style="margin-bottom: 1rem">
+      <div class="toolbar" style="margin: 0">
+        <label class="check-row">From <input id="from-date" type="date"></label>
+        <label class="check-row">To <input id="to-date" type="date"></label>
+        <label class="check-row">Top
+          <select id="top-select">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+          </select>
+        </label>
+        <button class="btn" id="load-btn" type="button">Load reports</button>
+        <span class="spacer"></span>
+        <button class="btn secondary" id="print-btn" type="button">🖨 Print / Save as PDF</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem">
+      <h2>Daily sales <button class="btn small secondary no-print" type="button" data-csv="daily" style="float: right">CSV</button></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Date</th><th class="num">Transactions</th><th class="num">Items sold</th><th class="num">Total</th></tr></thead>
+          <tbody id="daily-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem">
+      <h2>Best sellers <button class="btn small secondary no-print" type="button" data-csv="best-sellers" style="float: right">CSV</button></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>#</th><th>Product</th><th>Code</th><th class="num">Qty sold</th><th class="num">Revenue</th></tr></thead>
+          <tbody id="best-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem">
+      <h2>Inventory value <button class="btn small secondary no-print" type="button" data-csv="inventory" style="float: right">CSV</button></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr><th>Product</th><th>Code</th><th>Category</th><th class="num">Stock</th><th class="num">Price</th><th class="num">Value</th><th>Status</th></tr>
+          </thead>
+          <tbody id="inventory-body"></tbody>
+        </table>
+      </div>
+      <p class="hint">Total stock value: <b id="inventory-total">₱0.00</b></p>
+    </div>
+
+    <div class="card">
+      <h2>Stock movements <button class="btn small secondary no-print" type="button" data-csv="movements" style="float: right">CSV</button></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr><th>Date/time</th><th>Product</th><th class="num">Change</th><th>Reason</th><th class="num">Stock after</th><th>Reference / note</th></tr>
+          </thead>
+          <tbody id="movements-body"></tbody>
+        </table>
+      </div>
+      <p class="hint">Also exports: <button class="btn small secondary no-print" type="button" data-csv="sales">Sales log CSV</button></p>
+    </div>
+  </main>
+
+  <div id="print-area"></div>
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="js/reports.js"></script>
+</body>
+</html>

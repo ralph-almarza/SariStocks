@@ -1,0 +1,29 @@
+[
+  {
+    "id": "u_001",
+    "name": "System Admin",
+    "username": "admin",
+    "passwordHash": "scrypt$71102ffc10b81ecb1b4d138b9ca02bb0$628ee04f8faf79c9bfba3fa340879b217daa29b14b9fd7233d7a414e5970d9a3a7aa4fb16235f583d7e65dfa8cb71598f62fb017cdb990edb15fc04a68704f52",
+    "role": "admin",
+    "active": true,
+    "createdAt": "2026-10-04T07:00:00+08:00"
+  },
+  {
+    "id": "u_002",
+    "name": "Maria Santos",
+    "username": "maria",
+    "passwordHash": "scrypt$a1dcec229696941b10d622848718a7e0$32884cdc89f880185264d662a6c647bf5ca33eebb08183c5f13592d46b411877b87850455c1c1a176a3a4386b9eea5ba7b99de2b35a06fbeb238d2340792df97",
+    "role": "manager",
+    "active": true,
+    "createdAt": "2026-10-04T07:05:00+08:00"
+  },
+  {
+    "id": "u_003",
+    "name": "Ana Cruz",
+    "username": "ana",
+    "passwordHash": "scrypt$00532b0ab302eb77aa85812ebf9d02f6$2b4ce01b520c6012acecc9f2e3adab6fea4100950b614dab2ba61eba2d41a2891890d126a2a9c21f7b5aa3efa75b0c2827ae9091b7d39c5dad3bdc4378c9fc4f",
+    "role": "cashier",
+    "active": true,
+    "createdAt": "2026-10-04T07:10:00+08:00"
+  }
+]

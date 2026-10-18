@@ -1,0 +1,1657 @@
+[
+  {
+    "id": "s_000001",
+    "at": "2026-10-05T08:25:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0034",
+        "code": "SS-0034",
+        "name": "UFC Banana Ketchup 100g",
+        "qty": 1,
+        "unitPrice": 26,
+        "lineTotal": 26
+      }
+    ],
+    "total": 26,
+    "paid": 30,
+    "change": 4
+  },
+  {
+    "id": "s_000002",
+    "at": "2026-10-05T12:12:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0039",
+        "code": "SS-0039",
+        "name": "Surf Powder 25g Sachet",
+        "qty": 1,
+        "unitPrice": 8,
+        "lineTotal": 8
+      },
+      {
+        "productId": "p_0040",
+        "code": "SS-0040",
+        "name": "Downy Fabric Softener 25ml Sachet",
+        "qty": 3,
+        "unitPrice": 9,
+        "lineTotal": 27
+      },
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 2,
+        "unitPrice": 15,
+        "lineTotal": 30
+      }
+    ],
+    "total": 65,
+    "paid": 70,
+    "change": 5
+  },
+  {
+    "id": "s_000003",
+    "at": "2026-10-05T12:18:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0006",
+        "code": "SS-0006",
+        "name": "Nescafé Original 3-in-1 Sachet",
+        "qty": 2,
+        "unitPrice": 12,
+        "lineTotal": 24
+      },
+      {
+        "productId": "p_0001",
+        "code": "SS-0001",
+        "name": "Coke Sakto 200ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0023",
+        "code": "SS-0023",
+        "name": "Lucky Me Pancit Canton Chilimansi",
+        "qty": 2,
+        "unitPrice": 17,
+        "lineTotal": 34
+      }
+    ],
+    "total": 98,
+    "paid": 100,
+    "change": 2
+  },
+  {
+    "id": "s_000004",
+    "at": "2026-10-05T12:22:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0031",
+        "code": "SS-0031",
+        "name": "Datu Puti Vinegar 200ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0045",
+        "code": "SS-0045",
+        "name": "Rejoice Shampoo 12ml Sachet",
+        "qty": 1,
+        "unitPrice": 8,
+        "lineTotal": 8
+      },
+      {
+        "productId": "p_0012",
+        "code": "SS-0012",
+        "name": "Skyflakes Crackers 25g",
+        "qty": 2,
+        "unitPrice": 10,
+        "lineTotal": 20
+      },
+      {
+        "productId": "p_0030",
+        "code": "SS-0030",
+        "name": "Silver Swan Soy Sauce 200ml",
+        "qty": 2,
+        "unitPrice": 22,
+        "lineTotal": 44
+      }
+    ],
+    "total": 112,
+    "paid": 120,
+    "change": 8
+  },
+  {
+    "id": "s_000005",
+    "at": "2026-10-05T16:28:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0017",
+        "code": "SS-0017",
+        "name": "Nova Multigrain 78g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      },
+      {
+        "productId": "p_0022",
+        "code": "SS-0022",
+        "name": "Lucky Me Pancit Canton Original",
+        "qty": 1,
+        "unitPrice": 17,
+        "lineTotal": 17
+      }
+    ],
+    "total": 101,
+    "paid": 110,
+    "change": 9
+  },
+  {
+    "id": "s_000006",
+    "at": "2026-10-06T11:10:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0035",
+        "code": "SS-0035",
+        "name": "Del Monte Tomato Ketchup 100g",
+        "qty": 1,
+        "unitPrice": 30,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0038",
+        "code": "SS-0038",
+        "name": "Tide Bar 130g",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0012",
+        "code": "SS-0012",
+        "name": "Skyflakes Crackers 25g",
+        "qty": 3,
+        "unitPrice": 10,
+        "lineTotal": 30
+      }
+    ],
+    "total": 100,
+    "paid": 110,
+    "change": 10
+  },
+  {
+    "id": "s_000007",
+    "at": "2026-10-06T16:55:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0031",
+        "code": "SS-0031",
+        "name": "Datu Puti Vinegar 200ml",
+        "qty": 1,
+        "unitPrice": 20,
+        "lineTotal": 20
+      }
+    ],
+    "total": 20,
+    "paid": 20,
+    "change": 0
+  },
+  {
+    "id": "s_000008",
+    "at": "2026-10-07T07:15:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0031",
+        "code": "SS-0031",
+        "name": "Datu Puti Vinegar 200ml",
+        "qty": 3,
+        "unitPrice": 20,
+        "lineTotal": 60
+      }
+    ],
+    "total": 60,
+    "paid": 70,
+    "change": 10
+  },
+  {
+    "id": "s_000009",
+    "at": "2026-10-07T09:33:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0048",
+        "code": "SS-0048",
+        "name": "Neozep Forte (per tablet)",
+        "qty": 1,
+        "unitPrice": 9,
+        "lineTotal": 9
+      },
+      {
+        "productId": "p_0022",
+        "code": "SS-0022",
+        "name": "Lucky Me Pancit Canton Original",
+        "qty": 1,
+        "unitPrice": 17,
+        "lineTotal": 17
+      },
+      {
+        "productId": "p_0037",
+        "code": "SS-0037",
+        "name": "Joy Dishwashing Liquid 45ml Sachet",
+        "qty": 3,
+        "unitPrice": 8,
+        "lineTotal": 24
+      },
+      {
+        "productId": "p_0029",
+        "code": "SS-0029",
+        "name": "Argentina Corned Beef 150g",
+        "qty": 1,
+        "unitPrice": 55,
+        "lineTotal": 55
+      }
+    ],
+    "total": 105,
+    "paid": 110,
+    "change": 5
+  },
+  {
+    "id": "s_000010",
+    "at": "2026-10-07T11:47:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0059",
+        "code": "SS-0059",
+        "name": "Pancit Bihon 227g",
+        "qty": 3,
+        "unitPrice": 42,
+        "lineTotal": 126
+      }
+    ],
+    "total": 126,
+    "paid": 130,
+    "change": 4
+  },
+  {
+    "id": "s_000011",
+    "at": "2026-10-07T12:08:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0031",
+        "code": "SS-0031",
+        "name": "Datu Puti Vinegar 200ml",
+        "qty": 1,
+        "unitPrice": 20,
+        "lineTotal": 20
+      },
+      {
+        "productId": "p_0017",
+        "code": "SS-0017",
+        "name": "Nova Multigrain 78g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      }
+    ],
+    "total": 104,
+    "paid": 110,
+    "change": 6
+  },
+  {
+    "id": "s_000012",
+    "at": "2026-10-07T17:37:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0014",
+        "code": "SS-0014",
+        "name": "Cream-O Vanilla 35g",
+        "qty": 3,
+        "unitPrice": 10,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0005",
+        "code": "SS-0005",
+        "name": "Kopiko 78°C Latte 180ml",
+        "qty": 1,
+        "unitPrice": 25,
+        "lineTotal": 25
+      },
+      {
+        "productId": "p_0043",
+        "code": "SS-0043",
+        "name": "Safeguard Soap 60g",
+        "qty": 2,
+        "unitPrice": 25,
+        "lineTotal": 50
+      },
+      {
+        "productId": "p_0028",
+        "code": "SS-0028",
+        "name": "Century Tuna Flakes 155g",
+        "qty": 2,
+        "unitPrice": 42,
+        "lineTotal": 84
+      }
+    ],
+    "total": 189,
+    "paid": 190,
+    "change": 1
+  },
+  {
+    "id": "s_000013",
+    "at": "2026-10-07T18:07:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 1,
+        "unitPrice": 15,
+        "lineTotal": 15
+      },
+      {
+        "productId": "p_0041",
+        "code": "SS-0041",
+        "name": "Zonrox Bleach 250ml",
+        "qty": 3,
+        "unitPrice": 25,
+        "lineTotal": 75
+      },
+      {
+        "productId": "p_0011",
+        "code": "SS-0011",
+        "name": "Zest-O Orange Juice 250ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      }
+    ],
+    "total": 130,
+    "paid": 130,
+    "change": 0
+  },
+  {
+    "id": "s_000014",
+    "at": "2026-10-08T16:35:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0047",
+        "code": "SS-0047",
+        "name": "Biogesic 500mg (per tablet)",
+        "qty": 1,
+        "unitPrice": 6,
+        "lineTotal": 6
+      },
+      {
+        "productId": "p_0003",
+        "code": "SS-0003",
+        "name": "Royal Tru-Orange Sakto 200ml",
+        "qty": 3,
+        "unitPrice": 20,
+        "lineTotal": 60
+      },
+      {
+        "productId": "p_0012",
+        "code": "SS-0012",
+        "name": "Skyflakes Crackers 25g",
+        "qty": 2,
+        "unitPrice": 10,
+        "lineTotal": 20
+      },
+      {
+        "productId": "p_0026",
+        "code": "SS-0026",
+        "name": "555 Sardines in Tomato Sauce 155g",
+        "qty": 2,
+        "unitPrice": 28,
+        "lineTotal": 56
+      }
+    ],
+    "total": 142,
+    "paid": 150,
+    "change": 8
+  },
+  {
+    "id": "s_000015",
+    "at": "2026-10-08T17:58:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0002",
+        "code": "SS-0002",
+        "name": "Sprite Sakto 200ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0027",
+        "code": "SS-0027",
+        "name": "Ligo Sardines Green 155g",
+        "qty": 2,
+        "unitPrice": 30,
+        "lineTotal": 60
+      },
+      {
+        "productId": "p_0058",
+        "code": "SS-0058",
+        "name": "Rock Salt 200g",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      }
+    ],
+    "total": 145,
+    "paid": 150,
+    "change": 5
+  },
+  {
+    "id": "s_000016",
+    "at": "2026-10-09T12:58:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0058",
+        "code": "SS-0058",
+        "name": "Rock Salt 200g",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      },
+      {
+        "productId": "p_0004",
+        "code": "SS-0004",
+        "name": "C2 Green Tea 230ml",
+        "qty": 1,
+        "unitPrice": 25,
+        "lineTotal": 25
+      }
+    ],
+    "total": 70,
+    "paid": 80,
+    "change": 10
+  },
+  {
+    "id": "s_000017",
+    "at": "2026-10-09T17:29:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      },
+      {
+        "productId": "p_0011",
+        "code": "SS-0011",
+        "name": "Zest-O Orange Juice 250ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0041",
+        "code": "SS-0041",
+        "name": "Zonrox Bleach 250ml",
+        "qty": 3,
+        "unitPrice": 25,
+        "lineTotal": 75
+      }
+    ],
+    "total": 160,
+    "paid": 170,
+    "change": 10
+  },
+  {
+    "id": "s_000018",
+    "at": "2026-10-09T17:37:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0009",
+        "code": "SS-0009",
+        "name": "Bear Brand Sterilized 300ml",
+        "qty": 1,
+        "unitPrice": 42,
+        "lineTotal": 42
+      }
+    ],
+    "total": 42,
+    "paid": 50,
+    "change": 8
+  },
+  {
+    "id": "s_000019",
+    "at": "2026-10-09T17:45:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0052",
+        "code": "SS-0052",
+        "name": "Tuseran Forte (per tablet)",
+        "qty": 1,
+        "unitPrice": 10,
+        "lineTotal": 10
+      },
+      {
+        "productId": "p_0018",
+        "code": "SS-0018",
+        "name": "Piattos Sour Cream 85g",
+        "qty": 1,
+        "unitPrice": 30,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0013",
+        "code": "SS-0013",
+        "name": "Rebisco Sandwich 32g",
+        "qty": 1,
+        "unitPrice": 10,
+        "lineTotal": 10
+      }
+    ],
+    "total": 50,
+    "paid": 50,
+    "change": 0
+  },
+  {
+    "id": "s_000020",
+    "at": "2026-10-10T07:00:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0041",
+        "code": "SS-0041",
+        "name": "Zonrox Bleach 250ml",
+        "qty": 3,
+        "unitPrice": 25,
+        "lineTotal": 75
+      }
+    ],
+    "total": 75,
+    "paid": 80,
+    "change": 5
+  },
+  {
+    "id": "s_000021",
+    "at": "2026-10-10T09:07:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0036",
+        "code": "SS-0036",
+        "name": "Lady's Choice Mayo Sachet 27ml",
+        "qty": 3,
+        "unitPrice": 12,
+        "lineTotal": 36
+      },
+      {
+        "productId": "p_0011",
+        "code": "SS-0011",
+        "name": "Zest-O Orange Juice 250ml",
+        "qty": 3,
+        "unitPrice": 20,
+        "lineTotal": 60
+      },
+      {
+        "productId": "p_0055",
+        "code": "SS-0055",
+        "name": "White Sugar 1/2 kilo",
+        "qty": 3,
+        "unitPrice": 40,
+        "lineTotal": 120
+      },
+      {
+        "productId": "p_0043",
+        "code": "SS-0043",
+        "name": "Safeguard Soap 60g",
+        "qty": 3,
+        "unitPrice": 25,
+        "lineTotal": 75
+      }
+    ],
+    "total": 291,
+    "paid": 300,
+    "change": 9
+  },
+  {
+    "id": "s_000022",
+    "at": "2026-10-10T18:38:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0030",
+        "code": "SS-0030",
+        "name": "Silver Swan Soy Sauce 200ml",
+        "qty": 2,
+        "unitPrice": 22,
+        "lineTotal": 44
+      },
+      {
+        "productId": "p_0054",
+        "code": "SS-0054",
+        "name": "Brown Sugar 1/2 kilo",
+        "qty": 1,
+        "unitPrice": 45,
+        "lineTotal": 45
+      }
+    ],
+    "total": 89,
+    "paid": 90,
+    "change": 1
+  },
+  {
+    "id": "s_000023",
+    "at": "2026-10-11T07:20:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0013",
+        "code": "SS-0013",
+        "name": "Rebisco Sandwich 32g",
+        "qty": 1,
+        "unitPrice": 10,
+        "lineTotal": 10
+      },
+      {
+        "productId": "p_0023",
+        "code": "SS-0023",
+        "name": "Lucky Me Pancit Canton Chilimansi",
+        "qty": 1,
+        "unitPrice": 17,
+        "lineTotal": 17
+      },
+      {
+        "productId": "p_0050",
+        "code": "SS-0050",
+        "name": "Bioflu (per tablet)",
+        "qty": 3,
+        "unitPrice": 9,
+        "lineTotal": 27
+      }
+    ],
+    "total": 54,
+    "paid": 60,
+    "change": 6
+  },
+  {
+    "id": "s_000024",
+    "at": "2026-10-11T11:18:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0042",
+        "code": "SS-0042",
+        "name": "Colgate Toothpaste 10g Sachet",
+        "qty": 3,
+        "unitPrice": 10,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0045",
+        "code": "SS-0045",
+        "name": "Rejoice Shampoo 12ml Sachet",
+        "qty": 3,
+        "unitPrice": 8,
+        "lineTotal": 24
+      },
+      {
+        "productId": "p_0047",
+        "code": "SS-0047",
+        "name": "Biogesic 500mg (per tablet)",
+        "qty": 2,
+        "unitPrice": 6,
+        "lineTotal": 12
+      }
+    ],
+    "total": 66,
+    "paid": 70,
+    "change": 4
+  },
+  {
+    "id": "s_000025",
+    "at": "2026-10-11T12:02:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0056",
+        "code": "SS-0056",
+        "name": "Cooking Oil 200ml",
+        "qty": 2,
+        "unitPrice": 30,
+        "lineTotal": 60
+      }
+    ],
+    "total": 60,
+    "paid": 70,
+    "change": 10
+  },
+  {
+    "id": "s_000026",
+    "at": "2026-10-11T15:58:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0045",
+        "code": "SS-0045",
+        "name": "Rejoice Shampoo 12ml Sachet",
+        "qty": 1,
+        "unitPrice": 8,
+        "lineTotal": 8
+      },
+      {
+        "productId": "p_0026",
+        "code": "SS-0026",
+        "name": "555 Sardines in Tomato Sauce 155g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      },
+      {
+        "productId": "p_0039",
+        "code": "SS-0039",
+        "name": "Surf Powder 25g Sachet",
+        "qty": 1,
+        "unitPrice": 8,
+        "lineTotal": 8
+      }
+    ],
+    "total": 100,
+    "paid": 110,
+    "change": 10
+  },
+  {
+    "id": "s_000027",
+    "at": "2026-10-12T07:08:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0036",
+        "code": "SS-0036",
+        "name": "Lady's Choice Mayo Sachet 27ml",
+        "qty": 3,
+        "unitPrice": 12,
+        "lineTotal": 36
+      }
+    ],
+    "total": 36,
+    "paid": 40,
+    "change": 4
+  },
+  {
+    "id": "s_000028",
+    "at": "2026-10-12T14:46:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0057",
+        "code": "SS-0057",
+        "name": "Egg (per piece)",
+        "qty": 2,
+        "unitPrice": 9,
+        "lineTotal": 18
+      }
+    ],
+    "total": 18,
+    "paid": 20,
+    "change": 2
+  },
+  {
+    "id": "s_000029",
+    "at": "2026-10-12T15:55:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0049",
+        "code": "SS-0049",
+        "name": "Alaxan FR (per tablet)",
+        "qty": 2,
+        "unitPrice": 9,
+        "lineTotal": 18
+      },
+      {
+        "productId": "p_0015",
+        "code": "SS-0015",
+        "name": "Hansel Mocha Sandwich 30g",
+        "qty": 2,
+        "unitPrice": 9,
+        "lineTotal": 18
+      }
+    ],
+    "total": 36,
+    "paid": 40,
+    "change": 4
+  },
+  {
+    "id": "s_000030",
+    "at": "2026-10-13T07:00:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0032",
+        "code": "SS-0032",
+        "name": "Magic Sarap 8g",
+        "qty": 1,
+        "unitPrice": 6,
+        "lineTotal": 6
+      },
+      {
+        "productId": "p_0022",
+        "code": "SS-0022",
+        "name": "Lucky Me Pancit Canton Original",
+        "qty": 2,
+        "unitPrice": 17,
+        "lineTotal": 34
+      },
+      {
+        "productId": "p_0053",
+        "code": "SS-0053",
+        "name": "Well-Milled Rice (per kilo)",
+        "qty": 1,
+        "unitPrice": 55,
+        "lineTotal": 55
+      },
+      {
+        "productId": "p_0021",
+        "code": "SS-0021",
+        "name": "Pringles Sour Cream 107g",
+        "qty": 1,
+        "unitPrice": 89,
+        "lineTotal": 89
+      }
+    ],
+    "total": 184,
+    "paid": 190,
+    "change": 6
+  },
+  {
+    "id": "s_000031",
+    "at": "2026-10-13T12:11:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0055",
+        "code": "SS-0055",
+        "name": "White Sugar 1/2 kilo",
+        "qty": 2,
+        "unitPrice": 40,
+        "lineTotal": 80
+      },
+      {
+        "productId": "p_0041",
+        "code": "SS-0041",
+        "name": "Zonrox Bleach 250ml",
+        "qty": 1,
+        "unitPrice": 25,
+        "lineTotal": 25
+      }
+    ],
+    "total": 105,
+    "paid": 110,
+    "change": 5
+  },
+  {
+    "id": "s_000032",
+    "at": "2026-10-13T15:13:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0016",
+        "code": "SS-0016",
+        "name": "Chippy BBQ 110g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      },
+      {
+        "productId": "p_0058",
+        "code": "SS-0058",
+        "name": "Rock Salt 200g",
+        "qty": 2,
+        "unitPrice": 15,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0040",
+        "code": "SS-0040",
+        "name": "Downy Fabric Softener 25ml Sachet",
+        "qty": 3,
+        "unitPrice": 9,
+        "lineTotal": 27
+      },
+      {
+        "productId": "p_0023",
+        "code": "SS-0023",
+        "name": "Lucky Me Pancit Canton Chilimansi",
+        "qty": 1,
+        "unitPrice": 17,
+        "lineTotal": 17
+      }
+    ],
+    "total": 158,
+    "paid": 160,
+    "change": 2
+  },
+  {
+    "id": "s_000033",
+    "at": "2026-10-13T17:46:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0023",
+        "code": "SS-0023",
+        "name": "Lucky Me Pancit Canton Chilimansi",
+        "qty": 1,
+        "unitPrice": 17,
+        "lineTotal": 17
+      },
+      {
+        "productId": "p_0033",
+        "code": "SS-0033",
+        "name": "Ajinomoto Ginisa Mix 8g",
+        "qty": 1,
+        "unitPrice": 7,
+        "lineTotal": 7
+      },
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      },
+      {
+        "productId": "p_0020",
+        "code": "SS-0020",
+        "name": "Nips Peanuts 30g",
+        "qty": 2,
+        "unitPrice": 13,
+        "lineTotal": 26
+      }
+    ],
+    "total": 95,
+    "paid": 100,
+    "change": 5
+  },
+  {
+    "id": "s_000034",
+    "at": "2026-10-14T08:28:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0021",
+        "code": "SS-0021",
+        "name": "Pringles Sour Cream 107g",
+        "qty": 1,
+        "unitPrice": 89,
+        "lineTotal": 89
+      },
+      {
+        "productId": "p_0008",
+        "code": "SS-0008",
+        "name": "Milo 22g Sachet",
+        "qty": 1,
+        "unitPrice": 15,
+        "lineTotal": 15
+      },
+      {
+        "productId": "p_0002",
+        "code": "SS-0002",
+        "name": "Sprite Sakto 200ml",
+        "qty": 3,
+        "unitPrice": 20,
+        "lineTotal": 60
+      },
+      {
+        "productId": "p_0013",
+        "code": "SS-0013",
+        "name": "Rebisco Sandwich 32g",
+        "qty": 1,
+        "unitPrice": 10,
+        "lineTotal": 10
+      }
+    ],
+    "total": 174,
+    "paid": 180,
+    "change": 6
+  },
+  {
+    "id": "s_000035",
+    "at": "2026-10-14T11:35:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0016",
+        "code": "SS-0016",
+        "name": "Chippy BBQ 110g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      }
+    ],
+    "total": 84,
+    "paid": 90,
+    "change": 6
+  },
+  {
+    "id": "s_000036",
+    "at": "2026-10-14T16:05:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0056",
+        "code": "SS-0056",
+        "name": "Cooking Oil 200ml",
+        "qty": 1,
+        "unitPrice": 30,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0012",
+        "code": "SS-0012",
+        "name": "Skyflakes Crackers 25g",
+        "qty": 3,
+        "unitPrice": 10,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0008",
+        "code": "SS-0008",
+        "name": "Milo 22g Sachet",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      }
+    ],
+    "total": 105,
+    "paid": 110,
+    "change": 5
+  },
+  {
+    "id": "s_000037",
+    "at": "2026-10-14T16:22:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 1,
+        "unitPrice": 15,
+        "lineTotal": 15
+      }
+    ],
+    "total": 15,
+    "paid": 20,
+    "change": 5
+  },
+  {
+    "id": "s_000038",
+    "at": "2026-10-14T17:37:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0052",
+        "code": "SS-0052",
+        "name": "Tuseran Forte (per tablet)",
+        "qty": 1,
+        "unitPrice": 10,
+        "lineTotal": 10
+      },
+      {
+        "productId": "p_0051",
+        "code": "SS-0051",
+        "name": "Kremil-S (per tablet)",
+        "qty": 2,
+        "unitPrice": 12,
+        "lineTotal": 24
+      }
+    ],
+    "total": 34,
+    "paid": 40,
+    "change": 6
+  },
+  {
+    "id": "s_000039",
+    "at": "2026-10-15T08:18:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 1,
+        "unitPrice": 15,
+        "lineTotal": 15
+      },
+      {
+        "productId": "p_0052",
+        "code": "SS-0052",
+        "name": "Tuseran Forte (per tablet)",
+        "qty": 2,
+        "unitPrice": 10,
+        "lineTotal": 20
+      },
+      {
+        "productId": "p_0020",
+        "code": "SS-0020",
+        "name": "Nips Peanuts 30g",
+        "qty": 3,
+        "unitPrice": 13,
+        "lineTotal": 39
+      },
+      {
+        "productId": "p_0011",
+        "code": "SS-0011",
+        "name": "Zest-O Orange Juice 250ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      }
+    ],
+    "total": 114,
+    "paid": 120,
+    "change": 6
+  },
+  {
+    "id": "s_000040",
+    "at": "2026-10-15T08:39:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0044",
+        "code": "SS-0044",
+        "name": "Palmolive Shampoo 12ml Sachet",
+        "qty": 2,
+        "unitPrice": 8,
+        "lineTotal": 16
+      },
+      {
+        "productId": "p_0031",
+        "code": "SS-0031",
+        "name": "Datu Puti Vinegar 200ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0052",
+        "code": "SS-0052",
+        "name": "Tuseran Forte (per tablet)",
+        "qty": 3,
+        "unitPrice": 10,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0038",
+        "code": "SS-0038",
+        "name": "Tide Bar 130g",
+        "qty": 1,
+        "unitPrice": 20,
+        "lineTotal": 20
+      }
+    ],
+    "total": 106,
+    "paid": 110,
+    "change": 4
+  },
+  {
+    "id": "s_000041",
+    "at": "2026-10-15T10:10:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0046",
+        "code": "SS-0046",
+        "name": "Rexona Deodorant 25ml Sachet",
+        "qty": 1,
+        "unitPrice": 12,
+        "lineTotal": 12
+      },
+      {
+        "productId": "p_0011",
+        "code": "SS-0011",
+        "name": "Zest-O Orange Juice 250ml",
+        "qty": 3,
+        "unitPrice": 20,
+        "lineTotal": 60
+      },
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 1,
+        "unitPrice": 15,
+        "lineTotal": 15
+      }
+    ],
+    "total": 87,
+    "paid": 90,
+    "change": 3
+  },
+  {
+    "id": "s_000042",
+    "at": "2026-10-16T12:26:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0041",
+        "code": "SS-0041",
+        "name": "Zonrox Bleach 250ml",
+        "qty": 3,
+        "unitPrice": 25,
+        "lineTotal": 75
+      }
+    ],
+    "total": 75,
+    "paid": 80,
+    "change": 5
+  },
+  {
+    "id": "s_000043",
+    "at": "2026-10-16T15:03:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0054",
+        "code": "SS-0054",
+        "name": "Brown Sugar 1/2 kilo",
+        "qty": 2,
+        "unitPrice": 45,
+        "lineTotal": 90
+      },
+      {
+        "productId": "p_0039",
+        "code": "SS-0039",
+        "name": "Surf Powder 25g Sachet",
+        "qty": 2,
+        "unitPrice": 8,
+        "lineTotal": 16
+      },
+      {
+        "productId": "p_0031",
+        "code": "SS-0031",
+        "name": "Datu Puti Vinegar 200ml",
+        "qty": 1,
+        "unitPrice": 20,
+        "lineTotal": 20
+      }
+    ],
+    "total": 126,
+    "paid": 130,
+    "change": 4
+  },
+  {
+    "id": "s_000044",
+    "at": "2026-10-17T07:24:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 1,
+        "unitPrice": 15,
+        "lineTotal": 15
+      }
+    ],
+    "total": 15,
+    "paid": 20,
+    "change": 5
+  },
+  {
+    "id": "s_000045",
+    "at": "2026-10-17T17:07:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0036",
+        "code": "SS-0036",
+        "name": "Lady's Choice Mayo Sachet 27ml",
+        "qty": 3,
+        "unitPrice": 12,
+        "lineTotal": 36
+      },
+      {
+        "productId": "p_0047",
+        "code": "SS-0047",
+        "name": "Biogesic 500mg (per tablet)",
+        "qty": 2,
+        "unitPrice": 6,
+        "lineTotal": 12
+      },
+      {
+        "productId": "p_0035",
+        "code": "SS-0035",
+        "name": "Del Monte Tomato Ketchup 100g",
+        "qty": 3,
+        "unitPrice": 30,
+        "lineTotal": 90
+      },
+      {
+        "productId": "p_0042",
+        "code": "SS-0042",
+        "name": "Colgate Toothpaste 10g Sachet",
+        "qty": 2,
+        "unitPrice": 10,
+        "lineTotal": 20
+      }
+    ],
+    "total": 158,
+    "paid": 160,
+    "change": 2
+  },
+  {
+    "id": "s_000046",
+    "at": "2026-10-17T17:35:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0001",
+        "code": "SS-0001",
+        "name": "Coke Sakto 200ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      }
+    ],
+    "total": 40,
+    "paid": 40,
+    "change": 0
+  },
+  {
+    "id": "s_000047",
+    "at": "2026-10-17T18:35:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0010",
+        "code": "SS-0010",
+        "name": "Nature's Spring Water 500ml",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      },
+      {
+        "productId": "p_0016",
+        "code": "SS-0016",
+        "name": "Chippy BBQ 110g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      },
+      {
+        "productId": "p_0025",
+        "code": "SS-0025",
+        "name": "Payless Xtra Big Pancit Canton",
+        "qty": 3,
+        "unitPrice": 15,
+        "lineTotal": 45
+      }
+    ],
+    "total": 174,
+    "paid": 180,
+    "change": 6
+  },
+  {
+    "id": "s_000048",
+    "at": "2026-10-18T07:44:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0034",
+        "code": "SS-0034",
+        "name": "UFC Banana Ketchup 100g",
+        "qty": 1,
+        "unitPrice": 26,
+        "lineTotal": 26
+      },
+      {
+        "productId": "p_0045",
+        "code": "SS-0045",
+        "name": "Rejoice Shampoo 12ml Sachet",
+        "qty": 1,
+        "unitPrice": 8,
+        "lineTotal": 8
+      },
+      {
+        "productId": "p_0028",
+        "code": "SS-0028",
+        "name": "Century Tuna Flakes 155g",
+        "qty": 2,
+        "unitPrice": 42,
+        "lineTotal": 84
+      },
+      {
+        "productId": "p_0009",
+        "code": "SS-0009",
+        "name": "Bear Brand Sterilized 300ml",
+        "qty": 2,
+        "unitPrice": 42,
+        "lineTotal": 84
+      }
+    ],
+    "total": 202,
+    "paid": 210,
+    "change": 8
+  },
+  {
+    "id": "s_000049",
+    "at": "2026-10-18T07:58:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0040",
+        "code": "SS-0040",
+        "name": "Downy Fabric Softener 25ml Sachet",
+        "qty": 3,
+        "unitPrice": 9,
+        "lineTotal": 27
+      }
+    ],
+    "total": 27,
+    "paid": 30,
+    "change": 3
+  },
+  {
+    "id": "s_000050",
+    "at": "2026-10-18T08:42:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0054",
+        "code": "SS-0054",
+        "name": "Brown Sugar 1/2 kilo",
+        "qty": 2,
+        "unitPrice": 45,
+        "lineTotal": 90
+      },
+      {
+        "productId": "p_0026",
+        "code": "SS-0026",
+        "name": "555 Sardines in Tomato Sauce 155g",
+        "qty": 1,
+        "unitPrice": 28,
+        "lineTotal": 28
+      },
+      {
+        "productId": "p_0014",
+        "code": "SS-0014",
+        "name": "Cream-O Vanilla 35g",
+        "qty": 3,
+        "unitPrice": 10,
+        "lineTotal": 30
+      },
+      {
+        "productId": "p_0055",
+        "code": "SS-0055",
+        "name": "White Sugar 1/2 kilo",
+        "qty": 2,
+        "unitPrice": 40,
+        "lineTotal": 80
+      }
+    ],
+    "total": 228,
+    "paid": 230,
+    "change": 2
+  },
+  {
+    "id": "s_000051",
+    "at": "2026-10-18T09:19:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0015",
+        "code": "SS-0015",
+        "name": "Hansel Mocha Sandwich 30g",
+        "qty": 1,
+        "unitPrice": 9,
+        "lineTotal": 9
+      }
+    ],
+    "total": 9,
+    "paid": 10,
+    "change": 1
+  },
+  {
+    "id": "s_000052",
+    "at": "2026-10-18T09:59:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0017",
+        "code": "SS-0017",
+        "name": "Nova Multigrain 78g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      },
+      {
+        "productId": "p_0011",
+        "code": "SS-0011",
+        "name": "Zest-O Orange Juice 250ml",
+        "qty": 2,
+        "unitPrice": 20,
+        "lineTotal": 40
+      },
+      {
+        "productId": "p_0016",
+        "code": "SS-0016",
+        "name": "Chippy BBQ 110g",
+        "qty": 3,
+        "unitPrice": 28,
+        "lineTotal": 84
+      }
+    ],
+    "total": 208,
+    "paid": 210,
+    "change": 2
+  },
+  {
+    "id": "s_000053",
+    "at": "2026-10-18T10:09:00+08:00",
+    "cashierId": "u_003",
+    "cashierName": "Ana Cruz",
+    "lines": [
+      {
+        "productId": "p_0006",
+        "code": "SS-0006",
+        "name": "Nescafé Original 3-in-1 Sachet",
+        "qty": 2,
+        "unitPrice": 12,
+        "lineTotal": 24
+      },
+      {
+        "productId": "p_0047",
+        "code": "SS-0047",
+        "name": "Biogesic 500mg (per tablet)",
+        "qty": 3,
+        "unitPrice": 6,
+        "lineTotal": 18
+      },
+      {
+        "productId": "p_0051",
+        "code": "SS-0051",
+        "name": "Kremil-S (per tablet)",
+        "qty": 2,
+        "unitPrice": 12,
+        "lineTotal": 24
+      }
+    ],
+    "total": 66,
+    "paid": 70,
+    "change": 4
+  }
+]

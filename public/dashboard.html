@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — SariStocks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="navbar" class="topbar"></header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Dashboard</h1>
+      <span class="sub">Last 14 days</span>
+      <span class="spacer" style="flex: 1"></span>
+      <button class="btn secondary" id="refresh-btn" type="button">↻ Refresh</button>
+    </div>
+
+    <div class="grid cols-4" style="margin-bottom: 1rem">
+      <div class="card kpi">
+        <span class="label">Today's revenue</span>
+        <span class="value green" id="kpi-revenue">₱0.00</span>
+      </div>
+      <div class="card kpi">
+        <span class="label">Transactions today</span>
+        <span class="value" id="kpi-transactions">0</span>
+      </div>
+      <div class="card kpi">
+        <span class="label">Items sold today</span>
+        <span class="value" id="kpi-items">0</span>
+      </div>
+      <div class="card kpi">
+        <span class="label">Open low-stock alerts</span>
+        <span class="value green" id="kpi-alerts">0</span>
+      </div>
+    </div>
+
+    <div class="grid cols-2" style="margin-bottom: 1rem">
+      <div class="card">
+        <h2>Daily revenue</h2>
+        <div class="chart-box"><canvas id="trend-chart"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Best sellers</h2>
+        <div class="chart-box"><canvas id="top-chart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Low-stock alerts <span class="hint">— ordered by urgency (out of stock first, then biggest shortfall)</span></h2>
+      <p class="hint" id="most-urgent" style="margin-bottom: 0.6rem"></p>
+      <div id="alert-list"><div class="empty">No open alerts.</div></div>
+    </div>
+  </main>
+
+  <div id="toasts" class="toasts"></div>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

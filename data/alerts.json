@@ -1,0 +1,80 @@
+[
+  {
+    "id": "a_0001",
+    "productId": "p_0003",
+    "createdAt": "2026-10-18T21:15:43+08:00",
+    "updatedAt": "2026-10-18T21:15:43+08:00",
+    "stock": 8,
+    "minStock": 12,
+    "severity": 4,
+    "message": "Royal Tru-Orange Sakto 200ml: stock 8 at/below minimum 12.",
+    "status": "open",
+    "resolvedAt": null,
+    "resolvedBy": null
+  },
+  {
+    "id": "a_0002",
+    "productId": "p_0017",
+    "createdAt": "2026-10-18T21:15:43+08:00",
+    "updatedAt": "2026-10-18T21:15:43+08:00",
+    "stock": 5,
+    "minStock": 8,
+    "severity": 3,
+    "message": "Nova Multigrain 78g: stock 5 at/below minimum 8.",
+    "status": "open",
+    "resolvedAt": null,
+    "resolvedBy": null
+  },
+  {
+    "id": "a_0003",
+    "productId": "p_0021",
+    "createdAt": "2026-10-18T21:15:43+08:00",
+    "updatedAt": "2026-10-18T21:15:43+08:00",
+    "stock": 0,
+    "minStock": 4,
+    "severity": 4,
+    "message": "Pringles Sour Cream 107g is OUT OF STOCK (minimum 4).",
+    "status": "open",
+    "resolvedAt": null,
+    "resolvedBy": null
+  },
+  {
+    "id": "a_0004",
+    "productId": "p_0029",
+    "createdAt": "2026-10-18T21:15:43+08:00",
+    "updatedAt": "2026-10-18T21:15:43+08:00",
+    "stock": 4,
+    "minStock": 6,
+    "severity": 2,
+    "message": "Argentina Corned Beef 150g: stock 4 at/below minimum 6.",
+    "status": "open",
+    "resolvedAt": null,
+    "resolvedBy": null
+  },
+  {
+    "id": "a_0005",
+    "productId": "p_0048",
+    "createdAt": "2026-10-18T21:15:43+08:00",
+    "updatedAt": "2026-10-18T21:15:43+08:00",
+    "stock": 40,
+    "minStock": 60,
+    "severity": 20,
+    "message": "Neozep Forte (per tablet): stock 40 at/below minimum 60.",
+    "status": "open",
+    "resolvedAt": null,
+    "resolvedBy": null
+  },
+  {
+    "id": "a_0006",
+    "productId": "p_0049",
+    "createdAt": "2026-10-18T21:15:43+08:00",
+    "updatedAt": "2026-10-18T21:15:43+08:00",
+    "stock": 30,
+    "minStock": 50,
+    "severity": 20,
+    "message": "Alaxan FR (per tablet): stock 30 at/below minimum 50.",
+    "status": "open",
+    "resolvedAt": null,
+    "resolvedBy": null
+  }
+]

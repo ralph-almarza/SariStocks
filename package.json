@@ -1,0 +1,26 @@
+{
+  "name": "saristocks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Business Management and Sales Inventory System for small retail stores (sari-sari stores). Express + vanilla JS + JSON persistence with in-memory data structures.",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "seed": "node server/seed.js --reset",
+    "vendor": "node scripts/vendor.js",
+    "smoke": "node scripts/smoke-test.mjs",
+    "postinstall": "node scripts/vendor.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.9",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "html5-qrcode": "^2.3.8",
+    "qrcode": "^1.5.4"
+  }
+}

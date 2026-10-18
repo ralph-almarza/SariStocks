@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POS — SariStocks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="navbar" class="topbar"></header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Point of Sale</h1>
+      <span class="sub" id="cart-count">0 item(s)</span>
+    </div>
+
+    <div class="pos-grid">
+      <div class="stack">
+        <div class="card">
+          <h2>Find products</h2>
+          <form id="find-form" class="scan-row">
+            <input id="product-search" placeholder="Search by name or code…" autocomplete="off">
+            <button class="btn secondary" id="camera-btn" type="button">📷 Scan item</button>
+          </form>
+          <div id="product-list" class="product-list"><div class="empty">Loading products…</div></div>
+          <p class="hint">Type to filter the list, set a quantity, then click Add. Press Enter on an exact code (or the only match) to view the item's information. The camera scans a QR label or barcode and shows the item's details.</p>
+        </div>
+
+        <div class="card">
+          <h2>Cart</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th>Item</th><th class="num">Price</th><th>Qty</th><th class="num">Line</th><th></th></tr>
+              </thead>
+              <tbody id="cart-body"></tbody>
+            </table>
+          </div>
+          <div class="cart-actions">
+            <button class="btn secondary" id="undo-btn" type="button" disabled>↶ Undo</button>
+            <button class="btn secondary" id="redo-btn" type="button" disabled>↷ Redo</button>
+            <span style="flex:1"></span>
+            <button class="btn danger" id="clear-btn" type="button">Clear cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack">
+        <div class="card">
+          <h2>Payment</h2>
+          <div class="totals-row"><span>Subtotal</span><span id="subtotal">₱0.00</span></div>
+          <div class="totals-row total"><span>Total</span><span id="total">₱0.00</span></div>
+
+          <div class="field" style="margin-top: 0.8rem">
+            <label for="paid-input">Amount tendered</label>
+            <input id="paid-input" type="number" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="quick-cash">
+            <button class="btn small secondary" type="button" data-amount="20">₱20</button>
+            <button class="btn small secondary" type="button" data-amount="50">₱50</button>
+            <button class="btn small secondary" type="button" data-amount="100">₱100</button>
+            <button class="btn small secondary" type="button" data-amount="200">₱200</button>
+            <button class="btn small secondary" type="button" data-amount="500">₱500</button>
+            <button class="btn small secondary" type="button" data-amount="1000">₱1000</button>
+            <button class="btn small secondary" type="button" data-amount="exact">Exact</button>
+          </div>
+          <div class="totals-row" id="change-line"></div>
+
+          <button class="btn block" id="checkout-btn" type="button" style="margin-top: 0.6rem">Complete sale</button>
+        </div>
+
+        <div class="card">
+          <h2>Receipt print queue <span class="badge info" id="job-count">0</span></h2>
+          <div id="print-jobs"><div class="empty">No queued receipts.</div></div>
+          <button class="btn secondary block" id="print-next-btn" type="button" style="margin-top: 0.6rem" disabled>Print next receipt</button>
+          <p class="hint">Jobs print in the exact order the sales happened (FIFO).</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Camera scanner modal -->
+  <div class="modal" id="modal-camera">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Scan with camera</h2>
+        <button class="close-x" type="button" data-close="modal-camera">✕</button>
+      </div>
+      <div id="qr-reader"></div>
+      <p id="camera-error"></p>
+      <div class="scan-row">
+        <input id="camera-code" placeholder="Or type a code — e.g. SS-0001" autocomplete="off" autocapitalize="characters">
+        <button class="btn secondary" id="camera-lookup-btn" type="button">Show info</button>
+      </div>
+      <p class="hint">Scanning shows the item's information — it never adds to the cart by itself.</p>
+      <div class="modal-actions">
+        <button class="btn secondary" id="camera-cancel" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item info modal (opened by scanning, code lookup, or clicking a product) -->
+  <div class="modal" id="modal-item-info">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Item information</h2>
+        <button class="close-x" type="button" data-close="modal-item-info">✕</button>
+      </div>
+      <div id="item-info-content"></div>
+      <div class="modal-actions">
+        <input id="info-qty" class="qty-input" type="number" min="1" value="1" aria-label="Quantity to add">
+        <button class="btn" id="info-add-btn" type="button">Add to cart</button>
+        <button class="btn secondary" type="button" data-close="modal-item-info">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Receipt modal -->
+  <div class="modal" id="modal-receipt">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Sale completed</h2>
+        <button class="close-x" type="button" data-close="modal-receipt">✕</button>
+      </div>
+      <div id="receipt-content"></div>
+      <div class="modal-actions">
+        <button class="btn secondary" id="receipt-reprint-btn" type="button">Queue for later</button>
+        <button class="btn" id="receipt-print-btn" type="button">Print receipt</button>
+        <button class="btn secondary" type="button" data-close="modal-receipt">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="print-area"></div>
+  <div id="toasts" class="toasts"></div>
+
+  <script src="vendor/html5-qrcode.min.js"></script>
+  <script type="module" src="js/pos.js"></script>
+</body>
+</html>
